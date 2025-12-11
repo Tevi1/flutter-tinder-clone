@@ -43,7 +43,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         Text(
                           StringConst.REGISTER,
                           textAlign: TextAlign.center,
-                          style: textTheme.headline2,
+                          style: textTheme.displayMedium,
                         ),
                         SpaceH20(),
                         _buildForm()
@@ -58,7 +58,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     children: <Widget>[
                       Text(
                         StringConst.ALREADY_REGISTERED,
-                        style: textTheme.headline5?.copyWith(
+                        style: textTheme.headlineSmall?.copyWith(
                           color: AppColors.blackShade9,
                           fontWeight: FontWeight.w600,
                         ),
@@ -66,7 +66,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       SpaceW8(),
                       Text(
                         StringConst.LOG_IN,
-                        style: textTheme.headline5?.copyWith(
+                        style: textTheme.headlineSmall?.copyWith(
                           color: AppColors.lightBlue,
                           fontWeight: FontWeight.w600,
                         ),
@@ -142,7 +142,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         SpaceH20(),
         CustomButton(
           title: StringConst.REGISTER,
-          textStyle: textTheme.headline4?.copyWith(color: AppColors.white),
+          textStyle: textTheme.headlineMedium?.copyWith(color: AppColors.white),
           color: AppColors.pinkShade2,
           onPressed: () {},
         ),
@@ -151,7 +151,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         SpaceH16(),
         CustomButton(
           title: StringConst.REGISTER_WITH_GOOGLE,
-          textStyle: textTheme.headline4,
+          textStyle: textTheme.headlineMedium,
           hasIcon: true,
           color: AppColors.white,
           onPressed: () {},
@@ -176,7 +176,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             child: CustomDivider(color: AppColors.black),
           ),
           SpaceW8(),
-          Text(StringConst.OR, style: textTheme.headline4),
+          Text(StringConst.OR, style: textTheme.headlineMedium),
           SpaceW8(),
           Expanded(child: CustomDivider(color: AppColors.black)),
         ],

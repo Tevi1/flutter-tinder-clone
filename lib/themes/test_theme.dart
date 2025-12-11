@@ -50,7 +50,7 @@ class TestTheme {
           _lightFillColor.withOpacity(0.80),
           _darkFillColor,
         ),
-        contentTextStyle: textTheme.subtitle1!.apply(color: _darkFillColor),
+        contentTextStyle: textTheme.titleMedium!.apply(color: _darkFillColor),
       ),
     );
   }
@@ -97,15 +97,15 @@ class TestTheme {
   static const FontWeight thin = FontWeight.w100;
 
   static final TextTheme textTheme = TextTheme(
-    headline4: GoogleFonts.montserrat(fontWeight: bold, fontSize: 20.0),
-    headline5: GoogleFonts.oswald(fontWeight: medium, fontSize: 16.0),
-    headline6: GoogleFonts.montserrat(fontWeight: bold, fontSize: 16.0),
-    subtitle1: GoogleFonts.montserrat(fontWeight: medium, fontSize: 16.0),
-    subtitle2: GoogleFonts.montserrat(fontWeight: medium, fontSize: 14.0),
-    bodyText1: GoogleFonts.montserrat(fontWeight: regular, fontSize: 14.0),
-    bodyText2: GoogleFonts.montserrat(fontWeight: regular, fontSize: 16.0),
-    caption: GoogleFonts.oswald(fontWeight: semiBold, fontSize: 16.0),
-    overline: GoogleFonts.montserrat(fontWeight: medium, fontSize: 12.0),
-    button: GoogleFonts.montserrat(fontWeight: semiBold, fontSize: 14.0),
+    headlineMedium: GoogleFonts.montserrat(fontWeight: bold, fontSize: 20.0),
+    headlineSmall: GoogleFonts.oswald(fontWeight: medium, fontSize: 16.0),
+    titleLarge: GoogleFonts.montserrat(fontWeight: bold, fontSize: 16.0),
+    titleMedium: GoogleFonts.montserrat(fontWeight: medium, fontSize: 16.0),
+    titleSmall: GoogleFonts.montserrat(fontWeight: medium, fontSize: 14.0),
+    bodyLarge: GoogleFonts.montserrat(fontWeight: regular, fontSize: 14.0),
+    bodyMedium: GoogleFonts.montserrat(fontWeight: regular, fontSize: 16.0),
+    bodySmall: GoogleFonts.oswald(fontWeight: semiBold, fontSize: 16.0),
+    labelSmall: GoogleFonts.montserrat(fontWeight: medium, fontSize: 12.0),
+    labelLarge: GoogleFonts.montserrat(fontWeight: semiBold, fontSize: 14.0),
   );
 }

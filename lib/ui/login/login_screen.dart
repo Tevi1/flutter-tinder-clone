@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Text(
                           StringConst.SIGN_IN,
                           textAlign: TextAlign.center,
-                          style: textTheme.headline2,
+                          style: textTheme.displayMedium,
                         ),
                         SpaceH20(),
                         _buildForm()
@@ -64,14 +64,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(StringConst.DONT_HAVE_AN_ACCOUNT,
-                          style: textTheme.headline5?.copyWith(
+                          style: textTheme.headlineSmall?.copyWith(
                             color: AppColors.blackShade9,
                             fontWeight: FontWeight.w600,
                           )),
                       SpaceW16(),
                       Text(
                         StringConst.REGISTER,
-                        style: textTheme.headline5?.copyWith(
+                        style: textTheme.headlineSmall?.copyWith(
                           color: AppColors.lightBlue,
                           fontWeight: FontWeight.w600,
                         ),
@@ -119,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: <Widget>[
             Text(
               StringConst.FORGOT_PASSWORD,
-              style: textTheme.headline5?.copyWith(
+              style: textTheme.headlineSmall?.copyWith(
                 color: AppColors.lightBlue,
               ),
             ),
@@ -128,7 +128,7 @@ class _LoginScreenState extends State<LoginScreen> {
         SpaceH20(),
         CustomButton(
           title: StringConst.SIGN_IN,
-          textStyle: textTheme.headline4?.copyWith(color: AppColors.white),
+          textStyle: textTheme.headlineMedium?.copyWith(color: AppColors.white),
           color: AppColors.pinkShade2,
           onPressed:()=> context.router.push(HomePageRoute()),
         ),
@@ -137,7 +137,7 @@ class _LoginScreenState extends State<LoginScreen> {
         SpaceH16(),
         CustomButton(
           title: StringConst.SIGN_IN_WITH_GOOGLE,
-          textStyle: textTheme.headline4,
+          textStyle: textTheme.headlineMedium,
           hasIcon: true,
           color: AppColors.white,
           onPressed: ()=> context.router.push(HomePageRoute()),
@@ -162,7 +162,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: CustomDivider(color: AppColors.black),
           ),
           SpaceW8(),
-          Text(StringConst.OR, style: textTheme.headline4),
+          Text(StringConst.OR, style: textTheme.headlineMedium),
           SpaceW8(),
           Expanded(child: CustomDivider(color: AppColors.black)),
         ],
