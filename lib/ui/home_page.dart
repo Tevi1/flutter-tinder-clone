@@ -37,6 +37,30 @@ class _HomePageState extends State<HomePage> {
               height: 300,
               width: 200,
             )),
+        Card(
+            color: Colors.blue,
+            child: SizedBox(
+              height: 300,
+              width: 200,
+            )),
+        Card(
+            color: Colors.yellow,
+            child: SizedBox(
+              height: 300,
+              width: 200,
+            )),
+        Card(
+            color: Colors.purple,
+            child: SizedBox(
+              height: 300,
+              width: 200,
+            )),
+        Card(
+            color: Colors.orange,
+            child: SizedBox(
+              height: 300,
+              width: 200,
+            )),
       ],
       onDeckEmpty: () => debugPrint("Card deck empty"),
       onLeftSwipe: (Card card, List<Card> cardDeck, int cardsSwiped) =>
